@@ -1,0 +1,58 @@
+NAME
+
+Jacode - Perl program for Japanese character code conversion
+
+SYNOPSIS
+
+    use FindBin;
+    use lib "$FindBin::Bin/lib";
+    use Jacode;
+
+    Jacode::convert(\$line, $OUTPUT_encoding [, $INPUT_encoding [, $option]])
+    Jacode::xxx2yyy(\$line [, $option])
+    Jacode::to($OUTPUT_encoding, $line [, $INPUT_encoding [, $option]])
+    Jacode::jis($line [, $INPUT_encoding [, $option]])
+    Jacode::euc($line [, $INPUT_encoding [, $option]])
+    Jacode::sjis($line [, $INPUT_encoding [, $option]])
+    Jacode::utf8($line [, $INPUT_encoding [, $option]])
+    Jacode::jis_inout($JIS_Kanji_IN, $ASCII_IN)
+    Jacode::get_inout($string)
+    Jacode::cache()
+    Jacode::nocache()
+    Jacode::flushcache()
+    Jacode::flush()
+    Jacode::h2z_xxx(\$line)
+    Jacode::z2h_xxx(\$line)
+    Jacode::tr(\$line, $from, $to [, $option])
+    Jacode::trans($line, $from, $to [, $option])
+    Jacode::init()
+
+INSTALLATION
+
+   To test this software, type the following:
+
+   make test
+
+   To install this software, copy 'Jacode.pm' to any directory of @INC.
+
+SEE ALSO
+
+    jcode.pl: Perl library for Japanese character code conversion, Kazumasa Utashiro
+    ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/
+    http://web.archive.org/web/20090608090304/http://srekcah.org/jcode/
+    ftp://ftp.oreilly.co.jp/pcjp98/utashiro/
+    http://mail.pm.org/pipermail/tokyo-pm/2002-March/001319.html
+    https://twitter.com/uta46/status/11578906320
+
+    jacode - Perl program for Japanese character code conversion
+    https://metacpan.org/search?q=jacode.pl
+
+    Jacode4e - jacode.pl-like program for enterprise
+    https://metacpan.org/pod/Jacode4e
+
+    Jacode4e::RoundTrip - Jacode4e for round-trip conversion in JIS X 0213
+    https://metacpan.org/pod/Jacode4e::RoundTrip
+
+    Modern::Open - Autovivification, Autodie, and 3-args open support
+    https://metacpan.org/pod/Modern::Open
+
